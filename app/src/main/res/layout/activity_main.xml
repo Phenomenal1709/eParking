@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:orientation="horizontal">-->
+<!--        <RelativeLayout-->
+<!--            android:layout_width="1dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1">-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:background="@drawable/bg_share">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:src="@drawable/bg_share"-->
+<!--                    app:tint="#fff"-->
+<!--                    android:layout_margin="3dp"/>-->
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="65dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:layout_marginRight="6dp"-->
+<!--                    android:background="@drawable/bg_share">-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:src="@drawable/paybtn"-->
+<!--                        app:tint="#fff"-->
+<!--                        android:padding="6dp">-->
+<!--                        -->
+<!--                    </ImageView>-->
+<!--                </RelativeLayout>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginRight="65dp"-->
+<!--                    android:fontFamily="@font/aleo"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="PAYMENT"-->
+<!--                    android:textColor="#000"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textStyle="bold" />-->
+<!--                    -->
+<!--                    -->
+<!--            </RelativeLayout>-->
+<!--        </RelativeLayout>-->
+<!--            -->
+<!--    </LinearLayout>-->
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:onClick="expand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        android:layout_margin="20dp"
+        app:contentPadding="20dp">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:animateLayoutChanges="true">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/gigthree"
+
+                />
+
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Payment"-->
+<!--                android:textSize="28sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="#528FF0"-->
+<!--                android:fontFamily="@font/aleo"-->
+<!--                />-->
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/drop"/>
+            <TextView
+                android:id="@+id/details"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thank you for choosing our services🙏\nThe payment for four-wheeler vehicles is Rs.100.Pay anytime before checkout!"
+                android:textSize="17sp"
+                android:fontFamily="@font/alata"/>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_pay"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/aleo"
+        android:text="Payment"
+        android:textSize="18sp"
+         android:layout_marginTop="15dp"
+        app:neumorph_shadowColorDark="#528FF0"
+        app:neumorph_shapeType="flat" />
+
+    <soup.neumorphism.NeumorphButton
+
+        style="@style/Widget.Neumorph.Button"
+        android:id="@+id/btn_call"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/aleo"
+        android:text="Support"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        app:neumorph_shadowColorDark="#528FF0"
+        app:neumorph_shapeType="flat" >
+
+
+    </soup.neumorphism.NeumorphButton>
+
+
+
+
+</LinearLayout>
